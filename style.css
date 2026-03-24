@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+  max-width: 46rem;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 1.875rem 3.75rem rgba(61, 108, 236, 0.15);
+  overflow: hidden;
+  border-radius: 2rem;
+  margin-bottom: 3.125rem;
+}
+
+.left-side {
+  width: 50%;
+  padding: 2.5rem;
+  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+  border-radius: 2rem;
+  text-align: center;
+  color: #fff;
+}
+.left-side h3 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+.left-side h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.left-side p {
+  font-size: 1.125rem;
+}
+
+.score-circle {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  margin: 1rem auto;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.score-circle h1 {
+  font-size: 4.75rem;
+  font-weight: 800;
+}
+.score-circle p {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.right-side {
+  width: 50%;
+  padding: 2.5rem;
+  background: #fff;
+}
+.right-side h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.item {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.item--reaction {
+  background: #FFF6F6;
+}
+.item--memory {
+  background: #FFFBF4;
+}
+.item--verbal {
+  background: #F2FCF9;
+}
+.item--visual {
+  background: #F3F4FD;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  background: #1125D6;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

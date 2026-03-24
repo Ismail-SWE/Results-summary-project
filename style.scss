@@ -1,0 +1,161 @@
+// 🔹 Variables
+$primary: #7857ff;
+$secondary: #2e2be9;
+$blue: #1125D6;
+
+$light-red: #FFF6F6;
+$light-yellow: #FFFBF4;
+$light-green: #F2FCF9;
+$light-blue: #F3F4FD;
+
+$text-dark: #333;
+$white: #fff;
+
+$radius: 2rem;
+$radius-sm: 0.75rem;
+
+// 🔹 Mixin
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 🔹 Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// 🔹 Global
+body {
+  min-height: 100vh;
+  @include flex-center;
+  flex-direction: column;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+// 🔹 Layout
+main {
+  max-width: 46rem;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 1.875rem 3.75rem rgba(61, 108, 236, 0.15);
+  overflow: hidden;
+  border-radius: $radius;
+  margin-bottom: 3.125rem;
+}
+
+// 🔹 Left Side
+.left-side {
+  width: 50%;
+  padding: 2.5rem;
+  background: linear-gradient(to bottom, $primary, $secondary);
+  border-radius: $radius;
+  text-align: center;
+  color: $white;
+
+  h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+// 🔹 Score Circle
+.score-circle {
+  width: 12.5rem;
+  height: 12.5rem;
+  border-radius: 50%;
+  margin: 1rem auto;
+
+  background: linear-gradient(
+    hsl(256, 72%, 46%),
+    hsla(241, 72%, 46%, 0)
+  );
+
+  @include flex-center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 4.75rem;
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+}
+
+// 🔹 Right Side
+.right-side {
+  width: 50%;
+  padding: 2.5rem;
+  background: $white;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// 🔹 Items
+.item {
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border-radius: $radius-sm;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-left {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  &--reaction { background: $light-red; }
+  &--memory { background: $light-yellow; }
+  &--verbal { background: $light-green; }
+  &--visual { background: $light-blue; }
+}
+
+// 🔹 Button
+button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: $radius;
+  background: $blue;
+  color: $white;
+  font-size: 1.125rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(to bottom, $primary, $secondary);
+  }
+}
+
+// 🔹 Footer
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
